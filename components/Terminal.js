@@ -30,7 +30,7 @@ export default function Terminal() {
     let output;
     setLoading(true);
     
-    const command = newcommand.toLowerCase();
+    const command = newCommand.toLowerCase();
 
     if (command !== "") {
       const updatedList = [...list, command];
