@@ -16,7 +16,7 @@ export default function Home() {
       </h1>
       <p>
         Visit{" "}
-        <a href="https://achintya-7.github.io/" target="_blank" rel="noreferrer">
+        <a href="https://achintya-x7.vercel.app/" target="_blank" rel="noreferrer">
           Normal website
         </a>
       </p>
