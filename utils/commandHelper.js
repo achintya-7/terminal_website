@@ -77,7 +77,7 @@ const getExperience = async () => {
       .map(
         (experience) => `<div class="command" style="display:flex; flex-direction:row; align-item:center; justify-content:space-between">
         <div>
-        <a href="javascript:void(0)" target="_blank"><b class="command">${experience.name
+        <a target="_blank"><b class="command">${experience.name
           }</b></a> - <b>${experience.position}</b>
         </div>
         <div style="display:flex; flex-direction:row; align-item:center; gap:1rem">
