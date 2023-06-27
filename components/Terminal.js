@@ -26,10 +26,12 @@ export default function Terminal() {
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
 
-  const addCommand = async (command) => {
+  const addCommand = async (newCommand) => {
     let output;
     setLoading(true);
     
+    const command = newcommand.toLowerCase();
+
     if (command !== "") {
       const updatedList = [...list, command];
       setList(updatedList);
