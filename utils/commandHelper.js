@@ -4,10 +4,6 @@ const COMMANDS = [
     description: "About Me",
   },
   {
-    command: "neofetch",
-    description: "My System Info",
-  },
-  {
     command: "edu",
     description: "My Education",
   },
@@ -142,5 +138,18 @@ export const CONTENTS = {
   blogs: getBlogs,
   error: (input) =>    `<div class="help-command">sh: Unknown command: ${input}</div><div class="help-command">See \`help\` for info`,
   
+  // neofetch: () => `
+  // _   _      _ _
+  // | \ | | ___| | | ___
+  // |  \| |/ _ \ | |/ _ \
+  // | |\  |  __/ | | (_) |
+  // |_| \_|\___|_|_|\___/
+  
+  // os = "Ubuntu 20.04.2 LTS"
+  // kernel = "5.4.0-77-generic"
+  // cpu = "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz"
+  // gpu = "NVIDIA Corporation GA102 [GeForce RTX 3080]"
+  // memory = "32GB DDR4 @ 3200MHz"
+  // `
 };
 
