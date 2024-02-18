@@ -11,6 +11,9 @@ export default function Home() {
       <Head>
         <title>Achintya</title>
         <link rel="My Icon" href="/favicon.png" />
+
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="d1cd2d66-60d0-43ee-98e0-06f7173e2a78"></script>
+
       </Head>
 
       <Script 
