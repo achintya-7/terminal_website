@@ -3,6 +3,7 @@ import Terminal from "../components/Terminal";
 import styles from "../styles/Home.module.css";
 
 import Head from 'next/head';
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -10,6 +11,13 @@ export default function Home() {
       <Head>
         <title>Achintya</title>
         <link rel="My Icon" href="/favicon.png" />
+
+        <Script 
+          src="https://cloud.umami.is/script.js" 
+          data-website-id="d490ee0c-d4bf-4a98-866d-a7d0dae1d0cc" 
+          strategy="afterInteractive"
+        />
+      
       </Head>
       <h1>
         Achintya:$ <span className={styles.help}>type help to start</span>

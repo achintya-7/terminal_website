@@ -19,6 +19,14 @@ export default async function handler(req, res) {
           "Go Backend Developer in an AI startup. Working on technologies like Go, Docker, Gin, Postgres and GCP",
       },
       {
+        name: "DIGIT, eGov",
+        position: " e Developer",
+        startDate: "July 2023",
+        endDate: "Oct 2023",
+        description:
+          "Worked with Flutter and Open Street Maps to build a location based Vehicle Tracking App to prevent illegal dumpings of sewage and garbage.",
+      },
+      {
         name: "The One World",
         position: "Backend Developer",
         startDate: "Sep 2022",

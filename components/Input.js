@@ -10,7 +10,6 @@ export default function Input({ command, onSubmit }) {
     const storedList = JSON.parse(localStorage.getItem("commands"));
     if (storedList) {
       setList(storedList);
-      console.log(storedList)
     } else {
       localStorage.setItem("commands", JSON.stringify([]));
     }
@@ -24,23 +23,18 @@ export default function Input({ command, onSubmit }) {
 
   function handleKeyDown(e) {
     if (e.key === "ArrowUp") {
-      console.log(index.current)
 
       if (list.length > 0 && index.current < list.length) {
-        console.log("Index : ", list.length - index.current)
         const command = list[list.length - index.current - 1]
-        console.log(command)
         setCommand(command);
         index.current = index.current + 1;
       }
     }
 
     if (e.key === "ArrowDown") {
-      console.log(index.current)
 
       if (list.length > 0 && index.current > 0) {
         const command = list[list.length - index.current]
-        console.log(command)
         setCommand(command);
         index.current = index.current - 1;
       }

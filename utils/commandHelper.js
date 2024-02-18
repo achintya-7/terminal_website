@@ -37,13 +37,14 @@ const COMMANDS = [
 
 const getBlogs = async () => {
   const blogs = await (await fetch("api/blogs")).json();
+  // use subtitle, if not available use brief
   const blogHTML =
     `<h3>My Blogs (You can scroll)</h3>` +
     blogs
       .map(
         (blog) => `<div class="command">
-        <a href="https://achintya-7.hashnode.dev/${blog.slug}" target="_blank"><b class="command">${blog.title}</b></a>
-        <p class="meaning">${blog.brief}</p>
+        <a href="${blog.url}" target="_blank"><b class="command">${blog.title}</b></a>
+        <p class="meaning">${blog.subtitle ? blog.subtitle : blog.brief}</p>
       </div>`
       )
       .join("");
